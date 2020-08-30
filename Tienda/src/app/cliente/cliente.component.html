@@ -1,147 +1,151 @@
-
-<h2 class="text-center">Productos disponibles</h2>
-<div class="row">
+<div class="body">
+  <h2 class="text-center titulo">Productos disponibles</h2>
+  <div class="row productos">
     <div class="card col m-4 bg-light" style="width: 18rem;">
-        <img [src]="'assets/img/pan.jpg'" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Pan de caja Bimbo</h5>
-          <p class="card-text">Pan de caja de la marca bimbo, 24 porciones</p> 
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Codigo: 100</li>
-          <li class="list-group-item">Precio: $1.40</li>
-        </ul>
+      <div class="imagenes imagen1 card-img-top"></div>
+      <div class="card-body">
+        <h5 class="card-title">Pan de caja Bimbo</h5>
+        <p class="card-text">Pan de caja de la marca bimbo, 24 porciones</p>
       </div>
-      <div class="card col m-4 bg-light" style="width: 18rem;">
-        <img [src]="'assets/img/papel higienico.jpg'" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Papel higienico Scot</h5>
-          <p class="card-text">Fardo de 4 paquetes de papel higienico</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Codigo: 101</li>
-          <li class="list-group-item">Precio: $8.00</li>
-        </ul>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Codigo: 100</li>
+        <li class="list-group-item">Precio: $1.40</li>
+      </ul>
+    </div>
+    <div class="card col m-4 bg-light" style="width: 18rem;">
+      <div class="imagenes imagen2 card-img-top"></div>
+      <div class="card-body">
+        <h5 class="card-title">Papel higienico Scot</h5>
+        <p class="card-text">Fardo de 4 paquetes de papel higienico</p>
       </div>
-      <div class="card col m-4 bg-light" style="width: 18rem;">
-        <img [src]="'assets/img/caja.jpg'" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Caja Pilsener</h5>
-          <p class="card-text">Caja de 24 cervezas Pilsener</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Codigo: 102</li>
-          <li class="list-group-item">Precio: $15.00</li>
-        </ul>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Codigo: 101</li>
+        <li class="list-group-item">Precio: $8.00</li>
+      </ul>
+    </div>
+    <div class="card col m-4 bg-light" style="width: 18rem;">
+      <div class="imagenes imagen3 card-img-top"></div>
+      <div class="card-body">
+        <h5 class="card-title">Caja Pilsener</h5>
+        <p class="card-text">Caja de 24 cervezas Pilsener</p>
       </div>
-      <div class="card col m-4 bg-light" style="width: 18rem;">
-        <img [src]="'assets/img/garrafon.jpg'" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Garron de agua Cristal</h5>
-          <p class="card-text">Garron de gua de la marca Cristal de 5 litros </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Codigo: 103</li>
-          <li class="list-group-item">Precio: $2.40</li>
-        </ul>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Codigo: 102</li>
+        <li class="list-group-item">Precio: $15.00</li>
+      </ul>
+    </div>
+    <div class="card col m-4 bg-light" style="width: 18rem;">
+      <div class="imagenes imagen4 card-img-top"></div>
+      <div class="card-body">
+        <h5 class="card-title">Garron de agua Cristal</h5>
+        <p class="card-text">Garron de gua de la marca Cristal de 5 litros </p>
       </div>
-      <div class="card col m-4 bg-light" style="width: 18rem;">
-        <img [src]="'assets/img/alitas.jpg'" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Alitas</h5>
-          <p class="card-text">Alitas picantes extra grande de la marca Pollo Indio</p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Codigo: 104</li>
-          <li class="list-group-item">Precio: $2.10</li>
-        </ul>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Codigo: 103</li>
+        <li class="list-group-item">Precio: $2.40</li>
+      </ul>
+    </div>
+    <div class="card col m-4 bg-light" style="width: 18rem;">
+      <div class="imagenes imagen5 card-img-top"></div>
+      <div class="card-body">
+        <h5 class="card-title">Alitas</h5>
+        <p class="card-text">Alitas picantes extra grande de la marca Pollo Indio</p>
       </div>
-</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Codigo: 104</li>
+        <li class="list-group-item">Precio: $2.10</li>
+      </ul>
+    </div>
+  </div>
 
-
-
-<div class="container form-group col-sm-4 float-left ">
-
-<h2>Formulario de Compra</h2>
-    <form (ngSubmit)="calculo()"  #clienteform="ngForm">
-        <div class="form-group">
-            <label for="nombre">Nombre cliente</label>
-            <input type="text" class="form-control" id="nombre" required [(ngModel)]="nombre"
-            name="nombre" #name="ngModel">
-            <div [hidden]="name.valid || name.pristine">
-            Nombre es requerido
-            </div>
+  <div class="form-group formulario">
+    <h2>Formulario de Compra</h2>
+    <form (ngSubmit)="calculo()" #clienteform="ngForm">
+      <div class="form-group">
+        <label for="nombre">Nombre cliente</label>
+        <input type="text" class="form-control" id="nombre" required [(ngModel)]="nombre" name="nombre" #name="ngModel">
+        <div [hidden]="name.valid || name.pristine">
+          Nombre es requerido
         </div>
-        <div class="form-group">
-            <label for="dui">Dui</label>
-            <input type="text" class="form-control" id="dui" required [(ngModel)]="dui" name="dui" #Dui="ngModel">
-            <div [hidden]="Dui.valid || Dui.pristine">
-              Dui es requerido
-            </div>
+      </div>
+      <div class="form-group">
+        <label for="dui">Dui</label>
+        <input type="text" class="form-control" id="dui" pattern="[0-9]{8}-[0-9]{1}" required [(ngModel)]="dui" name="dui"
+          #Dui="ngModel">
+        <div class="validacionDui" [hidden]="Dui.valid || Dui.pristine">
+          <label class="badge badge-danger">El Dui debe de contener el siguiente formato "########-#"</label>
         </div>
-        <div class="form-group">
-            <label for="productos">Productos</label>
-            <select class="form-control" id="productos"
-            required [(ngModel)]="producto" name="productos"
-            #Productos="ngModel" (change)="cambio()">
-                <option *ngFor="let p of productos" [value]="p">{{p}}</option>
-            </select>
-            <div [hidden]="Productos.valid || Productos.pristine" class="alert alert-danger">
-            Producto es requerido
-            </div>
+      </div>
+      <div class="form-group">
+        <label for="productos">Productos</label>
+        <select class="form-control" id="productos" required [(ngModel)]="producto" name="productos" #Productos="ngModel"
+          (change)="cambio()">
+          <option *ngFor="let p of productos" [value]="p">{{p}}</option>
+        </select>
+        <div [hidden]="Productos.valid || Productos.pristine" class="alert alert-danger">
+          Producto es requerido
         </div>
-        <div class="form-group">
-          <label for="ide">Id</label>
-          <input disabled="disabled" type="text" class="form-control" id="ide" [(ngModel)]="id" name="ide">
-        </div>
-        <div class="form-group">
-          <label for="comentario">Comentario</label>
-          <textarea [(ngModel)]="descripcion" class="form-control"name="textarea" rows="10" cols="50" id="comentario" placeholder="Descripcion"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="precio">Precio</label>
-          <input disabled="disabled" type="text" class="form-control" id="precio" [(ngModel)]="precio" name="precio">
-        </div>
-        <div class="form-group">
-          <label for="des">Descuento</label>
-          <input disabled="disabled" type="text" class="form-control" id="des" [(ngModel)]="descuento" name="des">
-        </div>
-        <div class="form-group">
-          <label for="total">Total</label>
-          <input disabled="disabled" type="text" class="form-control" id="total" [(ngModel)]="total" name="total">
-        </div>
-        <button type="submit" class="btn btn-success"
-        [disabled]="!clienteform.form.valid">Comprar</button>
+      </div>
+      <div class="form-group">
+        <label for="ide">Id</label>
+        <input disabled="disabled" type="text" class="form-control" id="ide" [(ngModel)]="id" name="ide">
+      </div>
+      <div class="form-group">
+        <label for="comentario">Comentario</label>
+        <textarea [(ngModel)]="descripcion" class="form-control" name="textarea" rows="10" cols="50" id="comentario"
+          placeholder="Descripcion"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="precio">Precio</label>
+        <input disabled="disabled" type="text" class="form-control" id="precio" [(ngModel)]="precio" name="precio">
+      </div>
+      <div class="form-group">
+        <label for="des">Descuento %</label>
+        <input disabled="disabled" type="text" class="form-control" id="des" [(ngModel)]="descuento" name="des">
+      </div>
+      <div class="form-group">
+        <label for="total">Total</label>
+        <input disabled="disabled" type="text" class="form-control" id="total" [(ngModel)]="total" name="total">
+      </div>
+      <button type="button" (click)="comprobacionPrecio()" class="btn btn-warning"
+        [disabled]="!clienteform.form.valid">Comprobar precio</button>
+      &nbsp;
+      <div class="esconderCompra" [hidden]="!puedecomprar">
+        <button type="submit" class="btn btn-success" [disabled]="!clienteform.form.valid">Comprar</button>
+      </div>
     </form>
   </div>
 
 
-  <div [hidden]="!enviar" class="container form-group col-sm-4 float-eight"> 
-    <table class="table">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nombre</th>
-          <th scope="col">Dui</th>
-          <th scope="col">Id producto</th>
-          <th scope="col">Descripcion</th>
-          <th scope="col">Precio</th>
-          <th scope="col">Descuento</th>
-          <th scope="col">Total a pagar</th> 
-        </tr>
-      </thead>
-      <tbody>     
-        <tr *ngFor="let registro of registros">
-          <td scope="row">{{registro.n}}</td>
-          <td >{{registro.nombre}}</td>
-          <td >{{registro.dui}}</td>
-          <td >{{registro.id}}</td>
-          <td >{{registro.descripcion}}</td>
-          <td >{{registro.precio}}</td>
-          <td >{{registro.descuento}}</td>
-          <td >{{registro.total}}</td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="tabla">
+    <h2>Información de compras realizadas</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Dui</th>
+            <th scope="col">Id producto</th>
+            <th scope="col">Descripcion</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Descuento %</th>
+            <th scope="col">Total a pagar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let registro of registros">
+            <td scope="row">{{registro.n}}</td>
+            <td>{{registro.nombre}}</td>
+            <td>{{registro.dui}}</td>
+            <td>{{registro.id}}</td>
+            <td>{{registro.descripcion}}</td>
+            <td>{{registro.precio}}</td>
+            <td>{{registro.descuento}}</td>
+            <td>{{registro.total}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-
+</div>
