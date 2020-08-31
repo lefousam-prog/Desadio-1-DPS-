@@ -44,7 +44,7 @@ export class ClienteComponent implements OnInit {
       this.total = this.precio;
     }
     else{
-      if(this.listadoclientes[this.dui] == 2){
+      if(this.listadoclientes[this.dui] >= 2 && this.listadoclientes[this.dui] <= 4){
         this.descuento = 5;
         this.total = Number(this.precio - (this.precio * (this.descuento / 100))).toFixed(2);
       }
